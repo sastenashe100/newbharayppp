@@ -1,0 +1,60 @@
+# classes4.dex
+
+.class Lorg/simpleframework/xml/stream/HyphenBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/simpleframework/xml/stream/Style;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/simpleframework/xml/stream/HyphenBuilder$Parser;
+    }
+.end annotation
+
+
+# virtual methods
+.method public final o(Ljava/lang/String;)Ljava/lang/String;
+    .registers 3
+
+    if-eqz p1, :cond_c
+
+    new-instance v0, Lorg/simpleframework/xml/stream/HyphenBuilder$Parser;
+
+    invoke-direct {v0, p1}, Lorg/simpleframework/xml/stream/Splitter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Lorg/simpleframework/xml/stream/Splitter;->c()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_c
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public final v(Ljava/lang/String;)Ljava/lang/String;
+    .registers 3
+
+    if-eqz p1, :cond_c
+
+    new-instance v0, Lorg/simpleframework/xml/stream/HyphenBuilder$Parser;
+
+    invoke-direct {v0, p1}, Lorg/simpleframework/xml/stream/Splitter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Lorg/simpleframework/xml/stream/Splitter;->c()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_c
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
